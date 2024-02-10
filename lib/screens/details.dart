@@ -12,7 +12,13 @@ class Details extends StatelessWidget {
         elevation: 10.0,
         title: Text("details", style: TextStyle(color: Colors.white),),
       ),
-      body: Center(
+      body: _buildBody(context),
+    );
+  }
+}
+
+Widget _buildBody(BuildContext context){
+  return Center(
         child: ListView(
           padding: EdgeInsets.all(5.0),
           shrinkWrap: true,
@@ -75,7 +81,5 @@ class Details extends StatelessWidget {
             ),
           ),
         ]),
-      ),
-    );
-  }
+      );
 }

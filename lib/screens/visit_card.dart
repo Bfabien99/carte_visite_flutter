@@ -13,7 +13,13 @@ class VisitCard extends StatelessWidget {
         elevation: 10.0,
         title: Text("Ma carte de visite", style: TextStyle(color: Colors.white),),
       ),
-      body: Center(
+      body: _buildBody(context),
+    );
+  }
+}
+
+Widget _buildBody(BuildContext context){
+  return Center(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
@@ -65,7 +71,5 @@ class VisitCard extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
+      );
 }
